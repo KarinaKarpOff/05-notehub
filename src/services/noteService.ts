@@ -20,14 +20,11 @@ export interface FetchNotesParams {
 export interface FetchNotesResponse {
   notes: Note[];
   totalPages: number;
-  page: number;
-  perPage: number;
-  totalNotes: number;
 }
 
 export interface CreateNotePayload {
   title: string;
-  content?: string;
+  content: string;
   tag: NoteTag;
 }
 
